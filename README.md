@@ -38,10 +38,11 @@ Some of the analyses and visualizations performed:
 
 ## 🔍 Clustering Approach
 
-### Method:
+### Method :
 
 * **K-Means Clustering**
-* Determining the number of clusters using:
+  
+### Determining the number of clusters using :
 
 * **Elbow Method**
 * **Silhouette Score**
