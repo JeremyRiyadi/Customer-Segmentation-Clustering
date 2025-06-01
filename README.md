@@ -1,8 +1,8 @@
 ## 📁 Dataset Overview
 
-Dataset ini berisi informasi terkait **transaksi pelanggan** dari sebuah perusahaan retail. Data mencakup informasi demografis pelanggan, perilaku pembelian, dan detail produk yang dibeli. Dataset ini digunakan untuk **unsupervised learning**, khususnya **customer segmentation (klasterisasi)**
+This dataset contains information related to **customer transactions** from a retail company. The data includes customer demographic information, purchasing behavior, and details of the products purchased. This dataset is used for **unsupervised learning**, specifically **customer segmentation (clustering)**
 
-### 📌 Fitur Utama:
+### 📌 Main Feature:
 
 * `Customer ID`, `Gender`, `Birth Date`, `Location`
 * `Item Purchased`, `Category`, `Purchase Amount (USD)`
@@ -14,67 +14,67 @@ Dataset ini berisi informasi terkait **transaksi pelanggan** dari sebuah perusah
 
 ## 🧹 Data Preprocessing
 
-Langkah-langkah preprocessing yang dilakukan antara lain:
+The preprocessing steps taken include:
 
-* Konversi `Birth Date` menjadi `Age`
-* Encoding fitur kategorikal menggunakan One-Hot Encoding
-* Menangani missing values
-* Normalisasi data numerik (MinMaxScaler)
-* Seleksi fitur yang relevan untuk klasterisasi
+* Converting `Birth Date` to `Age`
+* Encoding categorical features using One-Hot Encoding
+* Handling missing values
+* Normalizing numeric data (MinMaxScaler)
+* Selecting relevant features for clustering
 
 ---
 
 ## 📊 Exploratory Data Analysis (EDA)
 
-Beberapa analisis dan visualisasi yang dilakukan:
+Some of the analyses and visualizations performed:
 
-* Distribusi umur pelanggan
-* Perbandingan jenis kelamin pelanggan
-* Distribusi nilai pembelian (`Purchase Amount`)
-* Korelasi antar fitur numerik
-* Analisis hubungan antara status langganan dan frekuensi pembelian
+* Customer age distribution
+* Customer gender comparison
+* Purchase Amount distribution
+* Correlation between numeric features
+* Analysis of the relationship between subscription status and purchase frequency
 
 ---
 
 ## 🔍 Clustering Approach
 
-### Metode:
+### Method:
 
 * **K-Means Clustering**
-* Penentuan jumlah klaster menggunakan:
+* Determining the number of clusters using:
 
-  * **Elbow Method**
-  * **Silhouette Score**
+* **Elbow Method**
+* **Silhouette Score**
 
-### Hasil:
+### Results:
 
-* Optimal cluster ditemukan pada `k = X` (tergantung hasil silhouette atau elbow)
-* Visualisasi hasil clustering dengan PCA (2D)
-* Analisis karakteristik masing-masing klaster (misalnya: cluster A berisi pelanggan muda dengan pembelian tinggi, cluster B berisi pelanggan pasif dengan transaksi sedikit, dst.)
+* Optimal cluster found at `k = X` (depending on silhouette or elbow results)
+* Visualization of clustering results with PCA (2D)
+* Analysis of the characteristics of each cluster (for example: cluster A contains young customers with high purchases, cluster B contains passive customers with few transactions, etc.)
 
 ---
 
 ## 📈 Evaluation
 
-* Visualisasi inertia dan silhouette score menunjukkan bahwa pembagian klaster cukup baik.
-* Interpretasi tiap klaster berdasarkan:
+* Visualization of inertia and silhouette score shows that the cluster division is quite good.
+* Interpretation of each cluster based on:
 
-  * Umur
-  * Nilai belanja
-  * Frekuensi pembelian
-  * Preferensi metode pembayaran dan langganan
+* Age
+* Shopping value
+* Purchase frequency
+* Payment method and subscription preferences
 
 ---
 
 ## 📌 Conclusion
 
-* Clustering berhasil membagi pelanggan ke dalam beberapa segmen yang berbeda berdasarkan perilaku dan demografi.
-* Hasil segmentasi dapat digunakan oleh tim marketing untuk strategi pemasaran yang lebih tertarget (misalnya targeting khusus untuk pelanggan dengan frekuensi tinggi atau nilai pembelian rendah tapi potensial).
+* Clustering successfully divides customers into several different segments based on behavior and demographics
+* Segmentation results can be used by the marketing team for more targeted marketing strategies (e.g. targeting specifically for customers with high frequency or low purchase value but potential)
 
 ---
 
 ## 📁 File
 
-* `2A.tsv` - Dataset transaksi pelanggan
-* `clustering.ipynb` - Notebook analisis dan clustering
-* `README.md` - Dokumentasi ini
+* `2A.tsv` - Customer transaction dataset
+* `clustering.ipynb` - Analysis and clustering notebook
+* `README.md` - This documentation
